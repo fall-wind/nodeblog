@@ -1,0 +1,985 @@
+<% include header %>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <h1 class="logo"><a href="#"> <img src="/images/logo.png" alt="logo"> </a>
+
+            <!--<h1 class="site-title"><a href="../index.html">Arbutus</a></h1>-->
+            <!--<p class="site-description">responsive wordpress blog</p>-->
+
+        </h1>
+    </div>
+</header>
+<!-- HEADER -->
+
+<div class="container">
+
+    <!-- MIDDLE -->
+    <div class="middle">
+
+        <!-- CONTENT -->
+        <div class="content">
+            <div id="owl-example" class="owl-carousel">
+
+                <!-- owl-carousel -->
+
+                <div class="owl-item">
+                    <div class="owl-slide-item">
+                        <img src="/images/rail.jpg" alt="Rail">
+                        <div class="entry-header">
+                            <span class="meta-date">Feb 11, 2015</span>
+                            <h1 class="entry-title">
+                                <a href="#" rel="bookmark">Tips for Going Solo</a>
+                            </h1>
+                            <div class="meta clearfix">
+                                <span class="meta-item meta-category"> Posted in <a href="#"
+                                                                                    rel="category tag">Travel</a></span>
+                            </div>
+                            <!-- / meta clearfix -->
+                        </div>
+                        <!-- entry header -->
+                    </div>
+                    <!--owl-slide-itemr -->
+                </div>
+                <!-- owl-item -->
+
+                <!-- owl-carousel -->
+
+                <div class="owl-item">
+                    <div class="owl-slide-item"><img src="/images/books.jpg" alt="Books">
+                        <div class="entry-header"><span class="meta-date">Feb 11, 2015</span>
+                            <h1 class="entry-title"><a href="#" rel="bookmark">Dying of the Light</a></h1>
+                            <div class="meta clearfix"><span class="meta-item meta-category"> Posted in <a href="#"
+                                                                                                           rel="category tag">History</a></span>
+                            </div>
+                            <!-- / meta clearfix -->
+                        </div>
+                        <!-- entry header -->
+                    </div>
+                    <!--owl-slide-itemr -->
+                </div>
+                <!-- owl-item -->
+
+                <!-- owl-carousel -->
+
+                <div class="owl-item">
+                    <div class="owl-slide-item"><img src="/images/lotus.jpg" alt="Lotus">
+                        <div class="entry-header"><span class="meta-date">Feb 11, 2015</span>
+                            <h1 class="entry-title"><a href="#" rel="bookmark">Lotus Flowers on the Deep Lake</a></h1>
+                            <div class="meta clearfix"><span class="meta-item meta-category"> Posted in <a href="#"
+                                                                                                           rel="category tag">Nature</a></span>
+                            </div>
+                            <!-- / meta clearfix -->
+                        </div>
+                        <!-- entry header -->
+                    </div>
+                    <!--owl-slide-itemr -->
+                </div>
+                <!-- owl-item -->
+
+                <!-- owl-carousel -->
+
+                <div class="owl-item">
+                    <div class="owl-slide-item"><img src="/images/brunch.jpg" alt="Brunch">
+                        <div class="entry-header"><span class="meta-date">Feb 11, 2015</span>
+                            <h1 class="entry-title"><a href="#" rel="bookmark">The Best in Brunch</a></h1>
+                            <div class="meta clearfix"><span class="meta-item meta-category"> Posted in <a href="#"
+                                                                                                           rel="category tag">Food</a></span>
+                            </div>
+                            <!-- / meta clearfix -->
+                        </div>
+                        <!-- entry header -->
+                    </div>
+                    <!--owl-slide-itemr -->
+                </div>
+                <!-- owl-item -->
+
+                <!-- owl-carousel -->
+
+                <div class="owl-item">
+                    <div class="owl-slide-item"><img src="/images/horse.jpg" alt="Horse-show">
+                        <div class="entry-header"><span class="meta-date">Feb 11, 2015</span>
+                            <h1 class="entry-title"><a href="#" rel="bookmark">How do I become a Jockey</a></h1>
+                            <div class="meta clearfix"><span class="meta-item meta-category"> Posted in <a href="#"
+                                                                                                           rel="category tag">Sport</a></span>
+                            </div>
+                            <!-- / meta clearfix -->
+                        </div>
+                        <!-- entry header -->
+                    </div>
+                    <!--owl-slide-itemr -->
+                </div>
+                <!-- owl-item -->
+
+                <!-- owl-carousel -->
+
+                <div class="owl-item">
+                    <div class="owl-slide-item"><img src="/images/group.jpg" alt="Family">
+                        <div class="entry-header"><span class="meta-date">Feb 11, 2015</span>
+                            <h1 class="entry-title"><a href="#" rel="bookmark">Family Life</a></h1>
+                            <div class="meta clearfix"><span class="meta-item meta-category"> Posted in <a href="#"
+                                                                                                           rel="category tag">Life</a></span>
+                            </div>
+                            <!-- / meta clearfix -->
+                        </div>
+                        <!-- entry header -->
+                    </div>
+                    <!--owl-slide-itemr -->
+                </div>
+                <!-- owl-item -->
+
+            </div>
+            <!-- owl-example -->
+
+            <div class="l-fixed">
+
+                <!-- primary -->
+                <div class="primary with-sidebar"> <!-- blog-posts-->
+                    <div class="blog-posts">
+                        <!-- output some articles... -->
+                        <% articles.forEach(function(article){ %>
+                        <% console.log(JSON.stringify(article));%>
+                        <% console.log('-**************-');%>
+
+                        <% include article %>
+                        <% }) %>
+
+                        <!-- HENTRY-->
+                        <article class="hentry">
+
+                            <!--featured-->
+                            <div class="featured"><a href="blog-single.html"> <img src="/images/legs.jpg"
+                                                                                   alt="Car"> </a></div>
+                            <!--featured-->
+
+                            <div class="hentry-middle">
+
+                                <!--ENTRY-HEADER-->
+                                <header class="entry-header">
+
+                                    <!--post header-->
+                                    <div class="post-header"><span class="cat-links"> <a href="#"
+                                                                                         title="View all posts in Design"
+                                                                                         rel="category tag">Life</a> / <a
+                                                    href="#" title="View all posts in Design"
+                                                    rel="category tag">Travel</a> </span>
+                                        <h2 class="entry-title"><a href="blog-single.html">Catching Up With Tom Ford</a>
+                                        </h2>
+                                    </div>
+                                    <!--post header-->
+
+                                </header>
+                                <!--ENTRY-HEADER-->
+
+                                <!--entry-content-->
+                                <div class="entry-content">
+                                    <p>Authorities emphasize the importance of taking precautions to ensure travel
+                                        safety. When traveling abroad, the odds favor a safe and incident-free trip,
+                                        however, travelers can be subject to difficulties, crime and violence. Some
+                                        safety considerations include being aware of one's surroundings, avoiding being
+                                        the target of a crime, leaving copies of one's passport and itinerary
+                                        information with trusted people, obtaining medical insurance valid in the
+                                        country being visited and registering with one's national embassy when arriving
+                                        in a foreign country. Many countries do not recognize drivers' licenses from
+                                        other countries; however most countries accept international driving
+                                        permits.</p>
+                                    <p>Automobile insurance policies issued in one's own country are often invalid in
+                                        foreign countries, and it's often a requirement to obtain temporary auto
+                                        insurance valid in the country being visited. It is also advisable to become
+                                        oriented with the driving-rules and -regulations of destination countries.
+                                        Wearing a seat belt is highly advisable for safety reasons; many countries have
+                                        penalties for violating seatbelt laws. <a class="more-link"
+                                                                                  href="blog-single.html"> <span
+                                                    class="button">Continue reading ...</span> </a></p>
+                                    <div class="post-meta"><span class="meta-info">December 12, 2014 by <a
+                                                    href="http://themelog.net/" title="Posts by themelog"
+                                                    rel="author">themelog</a> </span>
+                                        <div class="post-share"><a target="_blank"
+                                                                   href="https://www.facebook.com/themelog"><i
+                                                        class="fa fa-facebook"></i></a> <a target="_blank"
+                                                                                           href="https://twitter.com/theme_log"><i
+                                                        class="fa fa-twitter"></i></a> <a target="_blank"
+                                                                                          href="https://www.pinterest.com/envato/"><i
+                                                        class="fa fa-pinterest"></i></a> <a target="_blank"
+                                                                                            href="https://www.tumblr.com/"><i
+                                                        class="fa fa-tumblr"></i></a> <a href="#"><i
+                                                        class="fa fa-comments"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--entry-content-->
+
+                            </div>
+                            <!--hentry-middle-->
+
+                        </article>
+                        <!-- HENTRY-->
+
+                        <!-- new post-->
+
+                        <!-- HENTRY-->
+                        <article class="hentry">
+
+                            <!--featured-->
+                            <div class="featured"><a href="blog-single.html"> <img src="/images/trekking.jpg"
+                                                                                   alt="Trekking"> </a></div>
+                            <!--featured-->
+
+                            <div class="hentry-middle">
+
+                                <!--ENTRY-HEADER-->
+                                <header class="entry-header">
+
+                                    <!--post header-->
+                                    <div class="post-header"><span class="cat-links"> <a href="#"
+                                                                                         title="View all posts in Design"
+                                                                                         rel="category tag">Outdoor</a> / <a
+                                                    href="#" title="View all posts in Design"
+                                                    rel="category tag">Nature</a> </span>
+                                        <h2 class="entry-title"><a href="blog-single.html">Best Places for Trekking</a>
+                                        </h2>
+                                    </div>
+                                    <!--post header-->
+
+                                </header>
+                                <!--ENTRY-HEADER-->
+
+                                <!--entry-content-->
+                                <div class="entry-content">
+                                    <p>Backpacking is an outdoor activity where gear is carried in a backpack. This can
+                                        include food, water, bedding, tent, clothing, and cooking stove. Since all items
+                                        must be carried, weight is a very important factor in choosing equipment.
+                                        Backpacking trips consist of at least one night and can last for weeks or
+                                        months, sometimes aided by planned food and supply drops or resupply points.
+                                        Backpacking camps are usually more spartan than camping trips from a car or
+                                        boat.</p>
+                                    <p> Some backpackers bring along a pack animal, such as a horse, llama, goat, dog,
+                                        or donkey to help carry the weight of the gear. These animals need special
+                                        considerations when accompanying backpackers on a trip. Some areas restrict the
+                                        use of horses and other pack animals. For example, Great Basin National Park
+                                        does not allow domestic animals at all in backcountry areas. <a
+                                                class="more-link" href="blog-single.html"> <span class="button">Continue reading ...</span>
+                                        </a></p>
+                                    <div class="post-meta"><span class="meta-info">December 12, 2014 by <a
+                                                    href="http://themelog.net/" title="Posts by themelog"
+                                                    rel="author">themelog</a> </span>
+                                        <div class="post-share"><a target="_blank"
+                                                                   href="https://www.facebook.com/themelog"><i
+                                                        class="fa fa-facebook"></i></a> <a target="_blank"
+                                                                                           href="https://twitter.com/theme_log"><i
+                                                        class="fa fa-twitter"></i></a> <a target="_blank"
+                                                                                          href="https://www.pinterest.com/envato/"><i
+                                                        class="fa fa-pinterest"></i></a> <a target="_blank"
+                                                                                            href="https://www.tumblr.com/"><i
+                                                        class="fa fa-tumblr"></i></a> <a href="#"><i
+                                                        class="fa fa-comments"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--entry-content-->
+
+                            </div>
+                            <!--hentry-middle-->
+
+                        </article>
+                        <!-- HENTRY-->
+
+                        <!-- new post-->
+
+                        <!-- HENTRY-->
+                        <article class="hentry">
+
+                            <!--featured-->
+                            <div class="featured"><a href="blog-single.html"> <img src="/images/loyalty.jpg"
+                                                                                   alt="Loyalty"> </a></div>
+                            <!--featured-->
+
+                            <div class="hentry-middle">
+
+                                <!--ENTRY-HEADER-->
+                                <header class="entry-header">
+
+                                    <!--post header-->
+                                    <div class="post-header"><span class="cat-links"> <a href="#"
+                                                                                         title="View all posts in Design"
+                                                                                         rel="category tag">Lifestyle</a> </span>
+                                        <h2 class="entry-title"><a href="blog-single.html">The Loyalty of Dogs</a></h2>
+                                    </div>
+                                    <!--post header-->
+
+                                </header>
+                                <!--ENTRY-HEADER-->
+
+                                <!--entry-content-->
+                                <div class="entry-content">
+                                    <p>Animals as pets have a large sense of loyalty to humans which may be more
+                                        human-to-human loyalty. Famous cases include Greyfriars Bobby who attended his
+                                        master's grave for fourteen years; Hachiko, who returned to the place he used to
+                                        meet his master every day for nine years after his death; and Foxie, the spaniel
+                                        belonging to Charles Gough, who stayed by her dead master's side for three
+                                        months on Helvellyn in the Lake District in 1805 (the fact that Gough's body was
+                                        eaten by his dog was ignored in subsequent Romantic accounts of the story).</p>
+                                    <p>In the Mahabharata, the righteous King Yudhisthira, at the end of his life,
+                                        appeared at the gates of Heaven. He had previously lost his brothers and his
+                                        wife to death, and when he appeared at the gates his only remaining companion
+                                        was a stray dog he had picked up along the way. The god Indra is prepared to
+                                        admit him to Heaven, but refuses to admit the dog. <a class="more-link"
+                                                                                              href="blog-single.html">
+                                            <span class="button">Continue reading ...</span> </a></p>
+                                    <div class="post-meta"><span class="meta-info">December 12, 2014 by <a
+                                                    href="http://themelog.net/" title="Posts by themelog"
+                                                    rel="author">themelog</a> </span>
+                                        <div class="post-share"><a target="_blank"
+                                                                   href="https://www.facebook.com/themelog"><i
+                                                        class="fa fa-facebook"></i></a> <a target="_blank"
+                                                                                           href="https://twitter.com/theme_log"><i
+                                                        class="fa fa-twitter"></i></a> <a target="_blank"
+                                                                                          href="https://www.pinterest.com/envato/"><i
+                                                        class="fa fa-pinterest"></i></a> <a target="_blank"
+                                                                                            href="https://www.tumblr.com/"><i
+                                                        class="fa fa-tumblr"></i></a> <a href="#"><i
+                                                        class="fa fa-comments"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--entry-content-->
+
+                            </div>
+                            <!--hentry-middle-->
+
+                        </article>
+                        <!-- HENTRY-->
+
+                        <!-- new post-->
+
+                        <!-- HENTRY-->
+                        <article class="hentry">
+
+                            <!--featured-->
+                            <div class="featured"><a href="blog-single.html"> <img src="/images/computer.jpg"
+                                                                                   alt="job"> </a></div>
+                            <!--featured-->
+
+                            <div class="hentry-middle">
+
+                                <!--ENTRY-HEADER-->
+                                <header class="entry-header">
+
+                                    <!--post header-->
+                                    <div class="post-header"><span class="cat-links"> <a href="#"
+                                                                                         title="View all posts in Design"
+                                                                                         rel="category tag">Technology</a> </span>
+                                        <h2 class="entry-title"><a href="blog-single.html">Full-Time to Freelance
+                                                Employment</a></h2>
+                                    </div>
+                                    <!--post header-->
+
+                                </header>
+                                <!--ENTRY-HEADER-->
+
+                                <!--entry-content-->
+                                <div class="entry-content">
+                                    <p>A freelancer or freelance worker is term commonly used for a person who is
+                                        self-employed and is not necessarily committed to a particular employer
+                                        long-term. Freelance workers are sometimes represented by a company or an agency
+                                        that resells their labor and that of others to its clients with or without
+                                        project management and labor contributed by its regular employees. Others are
+                                        completely independent. While "independent contractor" would be the term used in
+                                        a higher register of English, freelancing is common in culture and creative
+                                        industries and this term specifically motions to participation therein. <a
+                                                class="more-link" href="blog-single.html"> <span class="button">Continue reading ...</span>
+                                        </a></p>
+                                    <div class="post-meta"><span class="meta-info">December 12, 2014 by <a
+                                                    href="http://themelog.net/" title="Posts by themelog"
+                                                    rel="author">themelog</a> </span>
+                                        <div class="post-share"><a target="_blank"
+                                                                   href="https://www.facebook.com/themelog"><i
+                                                        class="fa fa-facebook"></i></a> <a target="_blank"
+                                                                                           href="https://twitter.com/theme_log"><i
+                                                        class="fa fa-twitter"></i></a> <a target="_blank"
+                                                                                          href="https://www.pinterest.com/envato/"><i
+                                                        class="fa fa-pinterest"></i></a> <a target="_blank"
+                                                                                            href="https://www.tumblr.com/"><i
+                                                        class="fa fa-tumblr"></i></a> <a href="#"><i
+                                                        class="fa fa-comments"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--entry-content-->
+
+                            </div>
+                            <!--hentry-middle-->
+
+                        </article>
+                        <!-- HENTRY-->
+
+                        <!-- new post-->
+
+                        <!-- HENTRY-->
+                        <article class="hentry format-video">
+
+                            <!--featured-->
+                            <div class="media-wrap">
+                                <iframe src="http://player.vimeo.com/video/114767889?title=0&amp;byline=0&amp;portrait=0&amp;color=F56559"
+                                        width="320" height="180" allowfullscreen></iframe>
+                            </div>
+                            <!--featured-->
+
+                            <!--hentry-middle-->
+                            <div class="hentry-middle">
+
+                                <!--ENTRY-HEADER-->
+                                <header class="entry-header">
+
+                                    <!--post header-->
+                                    <div class="post-header"><span class="cat-links"> <a href="#"
+                                                                                         title="View all posts in Design"
+                                                                                         rel="category tag">Video</a> </span>
+                                        <h2 class="entry-title"><a href="blog-single.html">Illusion combining energy</a>
+                                        </h2>
+                                    </div>
+                                    <!--post header-->
+
+                                </header>
+                                <!--ENTRY-HEADER-->
+
+                                <!--entry-content-->
+                                <div class="entry-content">
+                                    <p>Dance is the art of movement of the body, usually rhythmically and to music,
+                                        using prescribed or improvised steps and gestures. "A dance" is any one
+                                        prescribed sequence of such movements, or the music to which it is performed, or
+                                        an event at which it takes place. Dance may also be regarded as a form of
+                                        nonverbal communication recognisable in other animals; in bee dances and
+                                        behaviour patterns such as mating dances. Dance can be categorized and described
+                                        in various ways. It may be analysed purely by its choreography, its repertoire
+                                        of movements, or it may be classified according to its time or place of origin.
+                                        Yet study reveals many generic similarities in many different times and places.
+                                        <a class="more-link" href="blog-single.html"> <span class="button">Continue reading ...</span>
+                                        </a></p>
+                                    <div class="post-meta"><span class="meta-info">December 12, 2014 by <a
+                                                    href="http://themelog.net/" title="Posts by themelog"
+                                                    rel="author">themelog</a> </span>
+                                        <div class="post-share"><a target="_blank"
+                                                                   href="https://www.facebook.com/themelog"><i
+                                                        class="fa fa-facebook"></i></a> <a target="_blank"
+                                                                                           href="https://twitter.com/theme_log"><i
+                                                        class="fa fa-twitter"></i></a> <a target="_blank"
+                                                                                          href="https://www.pinterest.com/envato/"><i
+                                                        class="fa fa-pinterest"></i></a> <a target="_blank"
+                                                                                            href="https://www.tumblr.com/"><i
+                                                        class="fa fa-tumblr"></i></a> <a href="#"><i
+                                                        class="fa fa-comments"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--post-meta-->
+                                </div>
+                                <!--entry-content-->
+                            </div>
+                            <!--hentry-middle-->
+                        </article>
+                        <!-- HENTRY-->
+
+                        <!-- new post-->
+
+                        <!-- HENTRY-->
+                        <article class="hentry format-audio">
+
+                            <!--featured-->
+                            <div class="media-wrap">
+                                <iframe width="1050" height="408"
+                                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173319672&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+                            </div>
+                            <!--featured-->
+
+                            <!--hentry-middle-->
+                            <div class="hentry-middle">
+
+                                <!--ENTRY-HEADER-->
+                                <header class="entry-header">
+
+                                    <!--post header-->
+                                    <div class="post-header"><span class="cat-links"> <a href="#"
+                                                                                         title="View all posts in Design"
+                                                                                         rel="category tag">Music</a> </span>
+                                        <h2 class="entry-title"><a href="blog-single.html">Bruno Mars - When i was your
+                                                man</a></h2>
+                                    </div>
+                                    <!--post header-->
+
+                                </header>
+                                <!--ENTRY-HEADER-->
+
+                                <!--entry-content-->
+                                <div class="entry-content">
+                                    <p>Mars had an unsuccessful stint with Motown Records, but then signed with Atlantic
+                                        in 2009. He became recognized as a solo artist after lending his vocals to the
+                                        songs "Nothin' on You" by B.o.B, and "Billionaire" by Travie McCoy, which were
+                                        worldwide successes, and for which he co-wrote the hooks. His debut studio
+                                        album, Doo-Wops & Hooligans (2010), was anchored by the U.S. Billboard Hot 100
+                                        chart-topping singles "Just the Way You Are" and "Grenade", as well as the
+                                        number-five single "The Lazy Song". His second album, Unorthodox Jukebox, was
+                                        released in 2012, peaked at number one in the United States. The album spawned
+                                        the international singles "Locked Out of Heaven", "When I Was Your Man" and
+                                        "Treasure". <a class="more-link" href="blog-single.html"> <span class="button">Continue reading ...</span>
+                                        </a></p>
+                                    <div class="post-meta"><span class="meta-info">December 12, 2014 by <a
+                                                    href="http://themelog.net/" title="Posts by themelog"
+                                                    rel="author">themelog</a> </span>
+                                        <div class="post-share"><a target="_blank"
+                                                                   href="https://www.facebook.com/themelog"><i
+                                                        class="fa fa-facebook"></i></a> <a target="_blank"
+                                                                                           href="https://twitter.com/theme_log"><i
+                                                        class="fa fa-twitter"></i></a> <a target="_blank"
+                                                                                          href="https://www.pinterest.com/envato/"><i
+                                                        class="fa fa-pinterest"></i></a> <a target="_blank"
+                                                                                            href="https://www.tumblr.com/"><i
+                                                        class="fa fa-tumblr"></i></a> <a href="#"><i
+                                                        class="fa fa-comments"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--post-meta-->
+
+                                </div>
+                                <!--entry-content-->
+                            </div>
+                            <!--hentry-middle-->
+                        </article>
+                        <!-- HENTRY-->
+
+                        <!-- new post-->
+
+                        <!-- HENTRY-->
+                        <article class="hentry format-quote">
+
+                            <!--hentry-middle-->
+                            <div class="hentry-middle">
+
+                                <!--ENTRY-HEADER-->
+                                <header class="entry-header">
+
+                                    <!--post header-->
+                                    <div class="post-header"><span class="cat-links"> <a href="#"
+                                                                                         title="View all posts in Design"
+                                                                                         rel="category tag">Technology</a> </span>
+                                        <h2 class="entry-title"><a href="blog-single.html">Steve Jobs - Design</a></h2>
+                                    </div>
+                                    <!--post header-->
+
+                                </header>
+                                <!--ENTRY-HEADER-->
+
+                                <!--entry-content-->
+                                <div class="entry-content">
+                                    <blockquote>
+                                        <p>''Technology is nothing. What's important is that you have a faith in people,
+                                            that they're basically good and smart, and if you give them tools, they'll
+                                            do wonderful things with them.''</p>
+                                        <cite>Steve Jobs</cite></blockquote>
+                                    <div class="post-meta"><span class="meta-info">December 12, 2014 by <a
+                                                    href="http://themelog.net/" title="Posts by themelog"
+                                                    rel="author">themelog</a> </span>
+                                        <div class="post-share"><a target="_blank"
+                                                                   href="https://www.facebook.com/themelog"><i
+                                                        class="fa fa-facebook"></i></a> <a target="_blank"
+                                                                                           href="https://twitter.com/theme_log"><i
+                                                        class="fa fa-twitter"></i></a> <a target="_blank"
+                                                                                          href="https://www.pinterest.com/envato/"><i
+                                                        class="fa fa-pinterest"></i></a> <a target="_blank"
+                                                                                            href="https://www.tumblr.com/"><i
+                                                        class="fa fa-tumblr"></i></a> <a href="#"><i
+                                                        class="fa fa-comments"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--post-meta-->
+
+                                </div>
+                                <!--entry-content-->
+                            </div>
+                            <!--hentry-middle-->
+                        </article>
+                        <!-- HENTRY-->
+
+                        <!-- new post-->
+
+                        <!-- HENTRY-->
+                        <article class="hentry format-gallery">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li><img src="/images/gallery-x.jpg" alt="Balloon"/></li>
+                                    <li><img src="/images/gallery-y.jpg" alt="Teddy"/></li>
+                                    <li><img src="/images/gallery-z.jpg" alt="Dress"/></li>
+                                </ul>
+                            </div>
+                            <!--hentry-middle-->
+                            <div class="hentry-middle">
+                                <!--ENTRY-HEADER-->
+                                <header class="entry-header">
+
+                                    <!--post header-->
+                                    <div class="post-header"><span class="cat-links"> <a href="#"
+                                                                                         title="View all posts in Design"
+                                                                                         rel="category tag">Gallery</a> </span>
+                                        <h2 class="entry-title"><a href="blog-single.html">Gallery Post Format</a></h2>
+                                    </div>
+                                    <!--post header-->
+
+                                </header>
+                                <!--ENTRY-HEADER-->
+
+                                <!--entry-content-->
+                                <div class="entry-content">
+                                    <p>The first permanent photograph, a contact-exposed copy of an engraving, was made
+                                        in 1822 by the bitumen process of Nicéphore Niépce; photographs of a real-world
+                                        scene, made using a camera obscura, followed a few years later, but Niépce's
+                                        process was not sensitive enough to be practical for that application: a camera
+                                        exposure lasting for hours or days was required. In 1829 Niépce entered into a
+                                        partnership with Louis Daguerre and the two collaborated to work out a similar
+                                        but more sensitive and otherwise improved process. <a class="more-link"
+                                                                                              href="blog-single.html">
+                                            <span class="button">Continue reading ...</span> </a></p>
+                                    <div class="post-meta"><span class="meta-info">December 12, 2014 by <a
+                                                    href="http://themelog.net/" title="Posts by themelog"
+                                                    rel="author">themelog</a> </span>
+                                        <div class="post-share"><a target="_blank"
+                                                                   href="https://www.facebook.com/themelog"><i
+                                                        class="fa fa-facebook"></i></a> <a target="_blank"
+                                                                                           href="https://twitter.com/theme_log"><i
+                                                        class="fa fa-twitter"></i></a> <a target="_blank"
+                                                                                          href="https://www.pinterest.com/envato/"><i
+                                                        class="fa fa-pinterest"></i></a> <a target="_blank"
+                                                                                            href="https://www.tumblr.com/"><i
+                                                        class="fa fa-tumblr"></i></a> <a href="#"><i
+                                                        class="fa fa-comments"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--post-meta-->
+
+                                </div>
+                                <!--entry-content-->
+                            </div>
+                            <!--hentry-middle-->
+                        </article>
+                        <!-- HENTRY-->
+
+                        <!-- post nav -->
+                        <!--<nav class="navigation" role="navigation">
+                          <div class="nav-previous"><a href="#"><span class="meta-nav">←</span> Older posts</a></div>
+                          <div class="nav-next"><a href="#">Newer posts <span class="meta-nav">→</span></a></div>
+                        </nav>-->
+                        <!-- post nav -->
+
+                        <!-- paging-navigation -->
+
+                        <nav class="navigation paging-navigation">
+                            <div class="pagination loop-pagination"><a class="prev" href="#">← Previous</a> <a href="#">1</a>
+                                <span class="page-numbers current">2</span> <a href="#">3</a> <a class="next" href="#">Next
+                                    →</a></div>
+                        </nav>
+                        <!-- paging-navigation -->
+
+                    </div>
+                    <!-- blog-posts-->
+                </div>
+                <!-- primary -->
+
+                <!-- secondary -->
+                <div class="secondary widget-area">
+
+                    <!-- widget : text -->
+                    <aside class="widget widget_text">
+                        <h3 class="widget-title"><span>About Me</span></h3>
+                        <div class="textwidget">
+                            <p><img src="/images/woman.jpg" alt="avatar"></p>
+                            <p><%= aboutme %></p>
+                        </div>
+                    </aside>
+                    <!-- widget : text -->
+
+                    <!-- widget : search -->
+                    <aside class="widget widget_search">
+                        <h3 class="widget-title"><span>Search</span></h3>
+                        <form role="search" method="get" class="search-form" action="#">
+                            <label> <span class="screen-reader-text">Search for:</span>
+                                <input type="search" class="search-field" placeholder="Search …" value="" name="s"
+                                       title="Search for:">
+                            </label>
+                            <input type="submit" class="search-submit" value="Search">
+                        </form>
+                    </aside>
+                    <!-- widget : search -->
+
+                    <!-- banner spot -->
+                    <aside class="widget banner_spot">
+                        <div>
+                            <p><img src="/images/blur240.jpg" alt="banner"></p>
+                        </div>
+                    </aside>
+                    <!-- banner spot -->
+
+                    <!-- widget : recent-posts -->
+                    <aside class="widget recent-posts">
+                        <h3 class="widget-title"><span>Latest Posts</span></h3>
+                        <ul class="side-newsfeed">
+                            <li>
+                                <div class="side-item">
+                                    <div class="side-image"><a href="#" rel="bookmark"><img
+                                                    src="/images/vatican.jpg"
+                                                    class="side-item-thumb wp-post-image"
+                                                    alt="flowerygirl"></a></div>
+                                    <div class="side-item-text">
+                                        <h4><a href="#/" rel="bookmark">Experience the Renaissance</a></h4>
+                                        <span class="side-item-meta">January 20, 2015</span></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side-item">
+                                    <div class="side-image"><a href="#" rel="bookmark"><img
+                                                    src="/images/legs.jpg" class="side-item-thumb wp-post-image"
+                                                    alt="flowerygirl"></a></div>
+                                    <div class="side-item-text">
+                                        <h4><a href="#/" rel="bookmark">Catching Up With Tom Ford</a></h4>
+                                        <span class="side-item-meta">January 20, 2015</span></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="side-item">
+                                    <div class="side-image"><a href="#" rel="bookmark"><img
+                                                    src="/images/trekking.jpg"
+                                                    class="side-item-thumb wp-post-image"
+                                                    alt="flowerygirl"></a></div>
+                                    <div class="side-item-text">
+                                        <h4><a href="#/" rel="bookmark">Best Places for Trekking</a></h4>
+                                        <span class="side-item-meta">January 20, 2015</span></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </aside>
+                    <!-- widget : recent-posts -->
+
+                    <!-- widget : flickr -->
+                    <aside class="widget widget_flickr">
+                        <h3 class="widget-title"><span>Photos on flickr</span></h3>
+                        <div class="flickr-badges flickr-badges-s">
+                            <script type="text/javascript" src="Scripts/badge_code_v2.js"></script>
+                        </div>
+                    </aside>
+                    <!-- widget : flickr -->
+
+                    <!-- widget : tag_cloud -->
+                    <aside class="widget widget_tag_cloud">
+                        <h3 class="widget-title"><span>Tags</span></h3>
+                        <div class="tagcloud"><a href="#" title="1 topic">adaptive</a> <a href="#" title="2 topics">design</a>
+                            <a href="#" title="1 topic">html</a> <a href="#" title="2 topics">responsive</a> <a href="#"
+                                                                                                                title="2 topics">think</a>
+                            <a href="#" title="1 topic">web design</a> <a href="#" title="1 topic">css</a> <a href="#"
+                                                                                                              title="2 topics">animations</a>
+                            <a href="#" title="1 topic">layout</a> <a href="#" title="2 topics">mobile</a> <a href="#"
+                                                                                                              title="2 topics">think</a>
+                            <a href="#" title="1 topic">typography</a></div>
+                    </aside>
+                    <!-- widget : tag_cloud -->
+
+                    <!-- widget_text -->
+                    <aside class="widget widget_text">
+                        <h3 class="widget-title"><span>Twitter</span></h3>
+                        <a class="twitter-timeline" href="https://twitter.com/alistapart"
+                           data-widget-id="489676925703442432">Tweets by @alistapart</a>
+                        <script>!function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0],
+                                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + '://platform.twitter.com/widgets.js';
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, 'script', 'twitter-wjs');</script>
+                    </aside>
+                    <!-- widget_text -->
+
+                    <!-- widget : categories -->
+                    <aside class="widget widget_categories">
+                        <h3 class="widget-title"><span>Categories</span></h3>
+                        <ul>
+                            <li class="cat-item"><a href="#" title="View all posts filed under Web Design">Web
+                                    Design</a></li>
+                            <li class="cat-item"><a href="#"
+                                                    title="View all posts filed under Javascript">Javascript</a></li>
+                            <li class="cat-item"><a href="#"
+                                                    title="View all posts filed under Typography">Typography</a></li>
+                            <li class="cat-item"><a href="#" title="View all posts filed under Freebies">Freebies</a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <!-- widget : categories -->
+
+                    <!-- widget : social_feed -->
+                    <aside class="widget widget_social_feed">
+                        <h3 class="widget-title"><span>Dribbble</span></h3>
+                        <!-- available networks : pinterest , dribbble , instagram , picasa , youtube -->
+                        <div class="social-feed" data-social-network="dribbble" data-username="twistedfork"
+                             data-limit="6"></div>
+                    </aside>
+                    <!-- widget : social_feed -->
+
+                    <!-- widget : recent_comments -->
+                    <!--<aside class="widget widget_recent_comments">
+                              <h3 class="widget-title"><span>Recent Comments</h3>
+                              <ul id="recentcomments">
+                                  <li class="recentcomments"><a href="#" rel="external nofollow" class="url">Albert Einstein</a> on <a href="#">Adaptive Layouts</a></li>
+                                  <li class="recentcomments"><a href="#" rel="external nofollow" class="url">Thomas Edison</a> on <a href="#">I invented the bulb!</a></li>
+                                  <li class="recentcomments"><a href="#" rel="external nofollow" class="url">Isaac Newton</a> on <a href="#">Gravity Theory</a></li>
+                              </ul>
+                          </aside>-->
+                    <!-- widget : recent_comments -->
+
+                    <!-- widget : archive -->
+                    <!-- <aside class="widget widget_archive">
+                              <h3 class="widget-title"><span>Archives</span></h3>
+                              <ul>
+                                  <li><a href="#" title="July 2012">July 2014</a></li>
+                                  <li><a href="#" title="June 2012">June 2014</a></li>
+                                  <li><a href="#" title="May 2012">May 2014</a></li>
+                                  <li><a href="#" title="April 2012">April 2014</a></li>
+                              </ul>
+                          </aside>-->
+                    <!-- widget : archive -->
+
+                    <!-- widget : meta -->
+                    <!-- <aside class="widget widget_meta">
+                            <h3 class="widget-title"><span>Meta</span></h3>
+                            <ul>
+                              <li><a href="#">Site Admin</a></li>
+                              <li><a href="#">Log out</a></li>
+                              <li><a href="#" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+                              <li><a href="#" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+                              <li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+                            </ul>
+                          </aside>-->
+                    <!-- widget : meta -->
+
+                    <!-- widget : calendar -->
+                    <!-- <aside id="calendar-2" class="widget widget_calendar">
+                              <h3 class="widget-title"><span>Calendar</span></h3>
+                              <div id="calendar_wrap">
+                                  <table id="wp-calendar">
+                                      <caption>
+                                      July 2014
+                                      </caption>
+                                      <thead>
+                                          <tr>
+                                              <th scope="col" title="Monday">M</th>
+                                              <th scope="col" title="Tuesday">T</th>
+                                              <th scope="col" title="Wednesday">W</th>
+                                              <th scope="col" title="Thursday">T</th>
+                                              <th scope="col" title="Friday">F</th>
+                                              <th scope="col" title="Saturday">S</th>
+
+                                              <th scope="col" title="Sunday">S</th>
+                                          </tr>
+                                      </thead>
+                                      <tfoot>
+                                          <tr>
+                                              <td colspan="3" id="prev"><a href="http://themes.pixelwars.org/test-wp/?m=201406" title="View posts for June 2014">« Jun</a></td>
+                                              <td class="pad">&nbsp;</td>
+                                              <td colspan="3" id="next" class="pad">&nbsp;</td>
+                                          </tr>
+                                      </tfoot>
+                                      <tbody>
+                                          <tr>
+                                              <td colspan="1" class="pad">&nbsp;</td>
+                                              <td>1</td>
+                                              <td><a href="http://themes.pixelwars.org/test-wp/?m=20140702" title="test">2</a></td>
+                                              <td>3</td>
+                                              <td>4</td>
+                                              <td>5</td>
+                                              <td>6</td>
+                                          </tr>
+                                          <tr>
+                                              <td>7</td>
+                                              <td>8</td>
+                                              <td>9</td>
+                                              <td>10</td>
+                                              <td>11</td>
+                                              <td>12</td>
+                                              <td>13</td>
+                                          </tr>
+                                          <tr>
+                                              <td>14</td>
+                                              <td id="today">15</td>
+                                              <td>16</td>
+                                              <td>17</td>
+                                              <td>18</td>
+                                              <td>19</td>
+                                              <td>20</td>
+                                          </tr>
+                                          <tr>
+                                              <td>21</td>
+                                              <td>22</td>
+                                              <td>23</td>
+                                              <td>24</td>
+                                              <td>25</td>
+                                              <td>26</td>
+                                              <td>27</td>
+                                          </tr>
+                                          <tr>
+                                              <td>28</td>
+                                              <td>29</td>
+                                              <td>30</td>
+                                              <td>31</td>
+                                              <td class="pad" colspan="3">&nbsp;</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </aside>-->
+                    <!-- widget : calendar -->
+
+                    <!-- widget : pages -->
+                    <!-- <aside class="widget widget_pages">
+                              <h3 class="widget-title"><span>Pages</span></h3>
+                              <ul>
+                                  <li class="page_item page_item_has_children"><a href="#">About Me</a>
+                                      <ul class="children">
+                                          <li class="page_item"><a href="#">Clearing Floats</a></li>
+                                          <li class="page_item"><a href="#">Page Image Alignment</a></li>
+                                          <li class="page_item"><a href="#">Page Markup And Formatting</a></li>
+                                          <li class="page_item"><a href="#">Page with comments</a></li>
+                                          <li class="page_item"><a href="#">Page with comments disabled</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="page_item"><a href="#">About Me</a></li>
+                                  <li class="page_item current_page_item"><a href="#">Gallery</a></li>
+                                  <li class="page_item"><a href="#">Contact</a></li>
+                              </ul>
+                          </aside>-->
+                    <!-- widget : pages -->
+
+                    <!-- widget : rss -->
+                    <!--<aside class="widget widget_rss">
+                            <h3 class="widget-title"><a class="rsswidget" href="#"><span>RSS Feed</span></a></h3>
+                            <ul>
+                              <li><a class="rsswidget" href="#">Thinking About Good Design</a> <span class="rss-date">May 2, 2012</span>
+                                <div class="rssSummary">Vivamus et aliquet ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Curabitur vitae ornare erat. Fusce mollis dolor sed justo iaculis feugiat. Suspendisse potenti. Aenean rutrum ligula nec eros gravida et cursus sapien mollis. In laoreet tempus purus sed dictum. Cras pellentesque interdum u […]</div>
+                                <cite>Albert Einstein</cite> </li>
+                              <li><a class="rsswidget" href="#" title="Vivamus et aliquet ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Curabitur vitae ornare erat. Fusce mollis dolor sed justo iaculis feugiat. Suspendisse potenti. Aenean rutrum ligula nec eros gravida et cursus sapien mollis. In laoreet tempus purus sed dictum. Cras pellentesque interdum u […]">A Deep Brief on Character Design</a> <span class="rss-date">May 2, 2012</span>
+                                <div class="rssSummary">Vivamus et aliquet ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Curabitur vitae ornare erat. Fusce mollis dolor sed justo iaculis feugiat. Suspendisse potenti. Aenean rutrum ligula nec eros gravida et cursus sapien mollis. In laoreet tempus purus sed dictum. Cras pellentesque interdum u […]</div>
+                                <cite>Albert Einstein</cite> </li>
+                            </ul>
+                          </aside>-->
+                    <!-- widget : rss -->
+
+                </div>
+                <!-- secondary -->
+
+            </div>
+            <!-- l-fixed -->
+        </div>
+        <!-- CONTENT -->
+    </div>
+    <!-- MIDDLE -->
+</div>
+<!-- CONTAINER -->
+
+<% include footer %>

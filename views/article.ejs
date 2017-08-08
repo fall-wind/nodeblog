@@ -1,0 +1,65 @@
+<article class="hentry">
+
+    <!--featured-->
+    <div class="featured">
+        <a href="<%= article['article_url'] %>">
+            <img src="<%= article['article_img_url'] %>" alt="<%= article['article_img_prompt'] %>">
+        </a>
+    </div>
+    <!--featured-->
+
+    <div class="hentry-middle">
+
+        <!--ENTRY-HEADER-->
+        <header class="entry-header">
+
+            <!--post header-->
+            <div class="post-header">
+                <span class="tag-links">
+                    <% article['tags'].forEach(function(tag){ %>
+                    <a href="/tag/<%= tag['tag_name'] %>" title="View all posts in <%= tag['tag_name'] %>"
+                       rel="tag"><%= tag['tag_name'] %></a>
+                    <% }) %>
+                </span>
+                <h2 class="entry-title">
+                    <a href="<%= article['article_url'] %>"><%= article['title'] %></a>
+                </h2>
+            </div>
+            <!--post header-->
+
+        </header>
+        <!--ENTRY-HEADER-->
+
+        <!--entry-content-->
+        <div class="entry-content">
+            <p><%= article['description'] %></p>
+            <p>
+                <a class="more-link" href="/articles/<%= article['url'] %>"><span
+                            class="button">Continue reading ...</span></a>
+            </p>
+            <div class="post-meta">
+                <span class="meta-info"><%= new Date(article['ts']).toLocaleString() %> by
+                <a href="<%= article['url'] %>" title="Posts by <%= article['author'] %>"
+                   rel="author"><%= article['author'] %></a>
+                </span>
+                <div class="post-share">
+                    <a href="http://facebook.com/themelog" target="_blank"><i class="fa fa-weixin"
+                                                                              aria-hidden="true"></i></a>
+                    <a href="http://facebook.com/themelog" target="_blank"><i class="fa fa-qq"
+                                                                              aria-hidden="true"></i></a>
+                    <a href="http://facebook.com/themelog" target="_blank"><i class="fa fa-weibo"
+                                                                              aria-hidden="true"></i></a>
+                    <a href="http://facebook.com/themelog" target="_blank"><i class="fa fa-facebook"
+                                                                              aria-hidden="true"></i></a>
+                    <a href="http://twitter.com/theme_log" target="_blank"><i class="fa fa-twitter"
+                                                                              aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--entry-content-->
+
+    </div>
+    <!--hentry-middle-->
+
+</article>
+

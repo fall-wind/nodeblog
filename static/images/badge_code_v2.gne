@@ -1,0 +1,29 @@
+var b_txt = '';
+
+// Write a warning for the developer
+b_txt+= '<!-- DEVELOPER WARNING: The Flickr badge code is likely to be deprecated, and we recommend changing to a new method to embed photo as soon as possible.  See https://www.flickr.com/api for information on how to access Flickr data. Thanks. -->';
+
+// write the badge
+	
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image1"><a href="https://www.flickr.com/photos/nickplee/28289391486/"><img src="https://farm9.staticflickr.com/8807/28289391486_ebe5f2809b_s.jpg" alt="A photo on Flickr" title="Where has the week gone? HFF" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image2"><a href="https://www.flickr.com/photos/nickplee/26813487220/"><img src="https://farm8.staticflickr.com/7648/26813487220_d0d2537afa_s.jpg" alt="A photo on Flickr" title="What time is it Mr Wolf" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image3"><a href="https://www.flickr.com/photos/nickplee/29190300925/"><img src="https://farm9.staticflickr.com/8113/29190300925_7ca582b849_s.jpg" alt="A photo on Flickr" title="Fallen Angel" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image4"><a href="https://www.flickr.com/photos/nickplee/30287781806/"><img src="https://farm9.staticflickr.com/8267/30287781806_17a18d1089_s.jpg" alt="A photo on Flickr" title="Grace" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image5"><a href="https://www.flickr.com/photos/nickplee/26709808790/"><img src="https://farm8.staticflickr.com/7192/26709808790_42490dab30_s.jpg" alt="A photo on Flickr" title="Happy Fence Friday" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image6"><a href="https://www.flickr.com/photos/nickplee/35965986955/"><img src="https://farm5.staticflickr.com/4307/35965986955_b82504eda0_s.jpg" alt="A photo on Flickr" title="Children of the corn" height="75" width="75"></a></div>';
+
+b_txt += '<span style="position:absolute;left:-999em;top:-999em;visibility:hidden" class="flickr_badge_beacon"><img src="https://geo.yahoo.com/p?s=792600102&t=2b2c690ce12038882bd80fc991dc8674&r=http%3A%2F%2Fthemes.themelog.net%2Farbutus-html%2Findex.html&fl_ev=0&lang=en&intl=hk" width="0" height="0" alt="" /></span>';
+
+document.write(b_txt);

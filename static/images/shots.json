@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+      Dan Matutina - Dribbble
+  </title>
+  <meta charset="utf-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"7840d0c136","applicationID":"2909452","transactionName":"Jg1bREUOClsARUpBEAAQRh9ECQlA","queueTime":1,"applicationTime":112,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  <meta name="theme-color" content="#333333">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="referrer" content="origin-when-cross-origin">
+  <!--[if gte IE 7]><!-->
+  <link rel="stylesheet" media="screen, projection" href="https://cdn.dribbble.com/assets/master-9f09f6b1710859fe2abfef977446dae876f5c305da7a516eb3f5f1605cb17f3a.css" />
+  <link rel="stylesheet" media="screen, projection" href="https://cdn.dribbble.com/assets/infinite-076624da9ec905a875e10ad4be445c3511295c5baa04f72695f24fa97060d19e.css" />
+  <link rel="stylesheet" media="screen, projection" href="https://cdn.dribbble.com/assets/attachment-overlay-7a12596ba47e2a470ef6ea3482cd3de494d58e892359be13d57bab05b4f8efa8.css" />
+  <!-- <![endif]-->
+  <link rel="stylesheet" media="print" href="https://cdn.dribbble.com/assets/print-af897c350716ce875940317977d37c5289e6aa39cb324abab961d4b514bd61f2.css" />
+  <link href="https://cdn.dribbble.com/assets/dribbble-vector-ball-95ca193529993e9b3904f7adb541680aba196642f557cfaf3cdbb0a48a284be4.svg" rel="mask-icon" color="#ea4c89" />
+  <link href="https://cdn.dribbble.com/assets/apple-touch-icon-precomposed-4a188d3f4dd693b67971fda843fd4bdeae751f9a245e3b878cae17e0a9d6a0a3.png" rel="apple-touch-icon-precomposed" />
+  <link href="https://cdn.dribbble.com/assets/favicon-63b2904a073c89b52b19aa08cebc16a154bcf83fee8ecc6439968b1e6db569c7.ico" rel="icon" />
+  <link href="https://cdn.dribbble.com/assets/dribbble-ball-192-ec064e49e6f63d9a5fa911518781bee0c90688d052a038f8876ef0824f65eaf2.png" sizes="192x192" rel="icon" />
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="cOkQzsXKljfoOpie24qIb0vQp3F5YWacAs63BFw4H6AQfh3txEunnFCFjSju0FWytwddq9U6r7AAje0xE3H3qQ==" />
+    <meta name="description" content="I&#39;m Dan Matutina, a Designer &amp; Illustrator based in Manila. :)" />
+<meta property="og:description" content="I&#39;m Dan Matutina, a Designer &amp; Illustrator based in Manila. :)" />
+<meta name="twitter:description" content="I&#39;m Dan Matutina, a Designer &amp; Illustrator based in Manila. :)" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Dan Matutina" />
+<meta name="twitter:title" content="Dan Matutina" />
+<meta property="og:site_name" content="Dribbble" />
+<meta name="twitter:site" content="@dribbble" />
+<meta name="twitter:domain" content="dribbble.com" />
+<meta property="og:url" content="https://dribbble.com/twistedfork" />
+<meta name="twitter:url" content="https://dribbble.com/twistedfork" />
+<meta name="twitter:creator" content="@danmatutina" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="https://cdn.dribbble.com/users/4370/screenshots/3668577/tribute.jpg" />
+<meta name="twitter:image" content="https://cdn.dribbble.com/users/4370/screenshots/3668577/tribute.jpg" />
+<meta name="twitter:label1" content="Dribbbled by" />
+<meta name="twitter:data1" content="@twistedfork" />
+
+
+  <meta name="apple-itunes-app" content="app-id=1228326440, app-argument=https://dribbble.com/twistedfork">
+
+  <script>
+    if (location.hash.match(/^#\./) && window.history) {
+      window.history.replaceState({}, window.title, location.origin + location.pathname + location.search)
+    }
+  </script>
+  <noscript>
+    <style>ol.dribbbles { display: block !important }</style>
+  </noscript>
+</head>
+
+<body id="profile" class="logged-out not-pro not-player not-self not-team not-on-team grid-small grid-with-meta">
+
+
+<div id="header" role="banner" class="group">
+  <div id="header-inner" class="group">
+
+    <div id="logo">
+      <a href="/"><img alt="dribbble" src="https://cdn.dribbble.com/assets/logo-bw-0200c7483844c355752e89efaa4ba89b83c9c591d70254ba10f4b25d901359d0.gif" /></a>
+    </div>
+
+    <a href="#nav" id="toggle-nav">Toggle navigation</a>
+
+    <ul id="nav" role="navigation">
+      <li id="t-search" role="search">
+        <form id="search" action="https://dribbble.com/search">
+          <input class="search-text" type="text" name="q" placeholder="Search " value="" />
+          
+        </form>
+      </li>
+      <li id="t-signin">
+        <a href="https://dribbble.com/session/new?return_to=%2Ftwistedfork">
+          <span>Sign in</span>
+</a>      </li>
+      <li id="t-signup">
+        <a href="https://dribbble.com/signup?return_to=%2Ftwistedfork">Sign up</a>
+      </li>
+      <li id="t-shots">
+        <a class="has-sub" href="/shots">Shots</a>
+        <ul class="tabs">
+  <li><a href="/shots">Popular</a></li>
+  <li><a href="/shots?sort=recent">Recent</a></li>
+  <li><a href="/shots?list=debuts">Debuts</a></li>
+  <li><a href="/shots?list=teams">Teams</a></li>
+  <li><a href="/shots?list=playoffs">Playoffs</a></li>
+
+
+  <li class="separate"><a href="/highlights">Highlights</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/goods">Goods by Designers</a></li>
+</ul>
+
+      </li>
+      <li id="t-players">
+        <a class="has-sub" href="/designers">Designers</a>
+        <ul class="tabs">
+  <li><a href="/designers">Find Designers</a></li>
+  <li><a href="/teams">Design Teams</a></li>
+
+
+  <li class="separate"><a href="/teams/info">Add Your Design Team</a></li>
+</ul>
+
+
+
+      </li>
+      <li id="t-blog">
+        <a class="has-sub" href="/stories">Blog</a>
+        <ul class="tabs">
+  <li><a href="/stories">Latest Stories</a></li>
+      <li class="separate"><a href="/stories/2017/07/27/shot-block-zines">Shot Block: Zines</a></li>
+      <li><a href="/stories/2017/07/26/timeout-frederique-matti">Timeout: Frederique Matti</a></li>
+      <li><a href="/stories/2017/07/24/weekly-replay">Weekly Replay: Jul 17</a></li>
+  
+</ul>
+
+      </li>
+      <li id="t-podcast">
+        <a class="has-sub" href="/overtime">Podcast</a>
+        <ul class="tabs">
+  <li><a href="/overtime">Latest Episodes</a></li>
+      <li class="separate"><a href="/overtime/2017/07/25/episode-18-jared-erondu">Episode 18: Jared Erondu</a></li>
+      <li><a href="/overtime/2017/07/11/episode-17-jon-contino">Episode 17: Jon Contino</a></li>
+      <li><a href="/overtime/2017/06/27/episode-16-danielle-evans">Episode 16: Danielle Evans</a></li>
+  <li class="separate">
+    <a href="https://itunes.apple.com/us/podcast/overtime/id1068288639" class="separate">Listen in iTunes</a>
+  </li>
+</ul>
+
+      </li>
+      <li id="t-meetups">
+        <a class="has-sub" href="/meetups">Meetups</a>
+        <ul class="tabs">
+  <li><a href="/meetups">Dribbble Meetups</a></li>
+  <li class="separate"><a href="/meetups/new">Host a Meetup</a></li>
+</ul>
+
+      </li>
+      <li id="t-jobs">
+        <a href="/jobs">Jobs</a>
+        <ul class="tabs">
+          <li><a href="/jobs">All</a></li>
+          <li><a href="/jobs?location=Anywhere">Remote / Anywhere</a></li>
+          <li><a href="/jobs?teams_only=true">Teams Hiring</a></li>
+          <li class="separate"><a href="/jobs/info">Post a Job</a></li>
+        </ul>
+      </li>
+      <li id="t-more">
+        <a href="/about">
+          <span>More</span>
+</a>        <ul class="tabs">
+          <li><a href="/about">About</a></li>
+          <li><a href="http://shop.dribbble.com/">Shop</a></li>
+          <li><a href="http://help.dribbble.com/">Support</a></li>
+          <li class="separate"><a href="/places">Places</a></li>
+          <li class="separate"><a href="/buckets">Buckets</a></li>
+          <li><a href="/colors">Colors</a></li>
+          <li class="separate"><a href="/integrations">Integrations</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div> <!-- /header -->
+
+<hr />
+
+<div class="ajax notice hide">
+  <h2></h2>
+</div>
+
+
+
+<div id="wrap">
+  
+    
+
+<div class="full-tabs">
+  <ul class="full-tabs-links">
+  <li class="shots">
+
+
+    <a href="/twistedfork">    <span class="label">Shots</span>
+    <span class="count">374</span>
+</a>
+</li>
+
+
+  
+
+<li class="followers">
+
+
+    <a href="/twistedfork/followers">    <span class="label">Followers</span>
+    <span class="count">13,539</span>
+</a>
+</li>
+
+
+
+
+
+
+  <li class="more">
+    <a href="#">
+      <span class="label">More</span>
+    </a>
+    <ul>
+      
+
+<li class="followers">
+
+
+    <a href="/twistedfork/followers">    <span class="label">Followers</span>
+    <span class="count">13,539</span>
+</a>
+</li>
+
+
+
+
+
+
+      
+
+      <li class="listed">
+
+
+    <a href="/twistedfork/lists/memberships">    <span class="label">Listed</span>
+    <span class="count">39</span>
+</a>
+</li>
+
+
+      
+
+      
+
+      <li class="likes">
+
+
+    <a href="/twistedfork/likes">    <span class="label">Likes</span>
+    <span class="count">472</span>
+</a>
+</li>
+
+
+      
+
+      <li class="tags">
+
+
+    <a href="/twistedfork/tags">    <span class="label">Tags</span>
+    <span class="count">55</span>
+</a>
+</li>
+
+    </ul>
+  </li>
+</ul>
+
+
+  <form class="select-sort-form" action="/twistedfork" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />    <select name="stream" id="stream"><option selected="selected" value="recent">Recent Shots</option>
+<option value="popular">Popular Shots</option></select>
+</form>
+    <div class="screenshot-actions">
+      <div class="actions-menu">
+  <a class="action grid" href="#">
+    <span>Actions</span>
+</a>  <ul class="actions-list">
+      <li class="shot-display">
+    <h3>Display Options</h3>
+    <ul class="large-small">
+          <li rel="tipsy" data-tipsy-class="tipsy-alt" title="Small with info" class="small-with-meta active">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMidYMid" width="72" height="72" viewbox="0 0 72 72" class="icon"><title id="3uk0aqv8ms3dxa5enlm7jvk9fze7bwr">Small with meta</title>
+  <path d="M49 53L23 53C21 53 20 52 20 50L20 22C20 20 21 19 23 19L49 19C51 19 52 20 52 22L52 50C52 52 51 53 49 53L49 53 49 53ZM28 48L44 48C45 48 46 47 46 46 46 45 45 44 44 44L28 44C27 44 26 45 26 46 26 47 27 48 28 48L28 48 28 48ZM46 25L26 25 26 39 46 39 46 25 46 25Z" fill="#333333"></path>
+</svg>
+
+            </a>
+          </li>
+          <li rel="tipsy" data-tipsy-class="tipsy-alt" title="Large with info" class="large-with-meta ">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMidYMid" width="72" height="72" viewbox="0 0 72 72" class="icon"><title id="e1rlylon192na9p1lu15b2moea0nbvs">Large with meta</title>
+  <path d="M57 61L15 61C13 61 12 60 12 58L12 14C12 12 13 11 15 11L57 11C59 11 60 12 60 14L60 58C60 60 59 61 57 61L57 61ZM20 56L52 56C53 56 54 55 54 54 54 53 53 52 52 52L20 52C19 52 18 53 18 54 18 55 19 56 20 56L20 56ZM54 17L18 17 18 47 54 47 54 17 54 17Z" fill="#333333"></path>
+</svg>
+
+            </a>
+          </li>
+          <li rel="tipsy" data-tipsy-class="tipsy-alt" title="Small without info" class="small-without-meta ">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMidYMid" width="72" height="72" viewbox="0 0 72 72" class="icon"><title id="gsy5krc808joz371elntz9n8rg8x1yk">Small without meta</title>
+  <path d="M49 49L23 49C21 49 20 48 20 46L20 26C20 24 21 23 23 23L49 23C51 23 52 24 52 26L52 46C52 48 51 49 49 49L49 49ZM46 29L26 29 26 43 46 43 46 29 46 29Z" fill="#333333"></path>
+</svg>
+
+            </a>
+          </li>
+          <li rel="tipsy" data-tipsy-class="tipsy-alt" title="Large without info" class="large-without-meta ">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMidYMid" width="72" height="72" viewbox="0 0 72 72" class="icon"><title id="jz1dvf61ijivag1uvxsflttlbhmmguw">Large without meta</title>
+  <path d="M57 57L15 57C13 57 12 56 12 54L12 18C12 16 13 15 15 15L57 15C59 15 60 16 60 18L60 54C60 56 59 57 57 57L57 57ZM54 21L18 21 18 51 54 51 54 21 54 21Z" fill="#333333"></path>
+</svg>
+
+            </a>
+          </li>
+    </ul>
+  </li>
+
+  </ul>
+</div>
+
+    </div>
+</div>
+
+
+
+  <div id="wrap-inner">
+    <div id="content" role="main">
+      <div class="notice-alert">
+        <h3><!-- message goes here --></h3>
+        <a href="#" class="close" aria-label="close">
+          <img width="25" alt="close" src="https://cdn.dribbble.com/assets/icon-shot-x-light-2x-a4fcd61bdb114023583740bd9f5a46734e243e5be2bff1baa3e1cc33e7877fcd.png" />
+        </a>
+      </div>
+
+      
+
+<div id="main" class="main-full floating-sidebar-container group ">
+  
+
+  <div class="floating-sidebar profile-info ">
+    <div class="profile-info-mod profile-essentials">
+      <h2 class="vcard">
+        <a class="url " rel="contact" href="/twistedfork"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/avatars/normal/DMat.jpg?1390460323" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/avatars/small/DMat.jpg?1390460323">
+  <img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/small/DMat.jpg?1390460323" />
+</picture>
+ Dan Matutina</a>
+          <span class="location">
+            <a class="locality" href="/designers?location=Philippines">Philippines</a>
+          </span>
+      </h2>
+
+        <div class="bio">I&#39;m Dan Matutina, a Designer &amp; Illustrator based in Manila. :)</div>
+
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+
+      <div class="profile-actions">
+        
+        <div class="follow-prompt">
+  <a class="follow" href="/twistedfork/followers">
+    <span>Follow</span>
+</a>  <a class="unfollow" href="/twistedfork/followers/twistedfork">
+    <span>Following</span>
+</a>  <a class="unblock" data-hover="Unblock" href="/blocks/twistedfork">Blocked</a>
+</div>
+        
+      </div>
+
+      <a href="#" class="floating-sidebar-toggle">
+        <span>More</span>
+      </a>
+    </div>
+
+    <div class="floating-sidebar-float">
+
+        <div class="profile-info-mod">
+          <h3>Skills</h3>
+          <div class="skills">
+            
+
+<a href="/skills/illustration">illustration</a> <a href="/skills/design">design</a>          </div>
+        </div>
+    </div>
+
+    <div class="floating-sidebar-extra">
+      
+
+        <div class="profile-info-mod">
+          <h3>Elsewhere</h3>
+
+          <ul class="profile-details">
+              <li>
+  <a class="elsewhere-website" rel="noreferrer " title="http://twistedfork.me" data-url="http://twistedfork.me" href="/twistedfork/click?type=site">
+    <img width="20" src="https://cdn.dribbble.com/assets/profile/icon-elsewhere-website-241749d5da6c64b1e51b820ab5ebc0d52274ba1da0c34cff6077e208e6871ea0.png" alt="Icon elsewhere website" />
+    <span class="label">twistedfork.me</span>
+</a></li>
+
+                  <li>
+      <a class="elsewhere-twitter" rel="noreferrer" title="danmatutina on Twitter" href="/twistedfork/click?type=twitter">
+        <img height="20" src="https://cdn.dribbble.com/assets/profile/icon-elsewhere-twitter-740b8ccb2aebe896ed737e6813f3d926bcd3b32ad01bca4f2d72465e50be3584.png" alt="Icon elsewhere twitter" />
+        <span class="label">Twitter</span>
+</a>    </li>
+    <li>
+      <a class="elsewhere-instagram" rel="noreferrer" title="twistedfork on Instagram" href="/twistedfork/click?type=instagram">
+        <img height="20" src="https://cdn.dribbble.com/assets/profile/icon-elsewhere-instagram-ef258bfd39ec49d8090f23b27769433f922cd034d9dfe7640b7c8a17f2b41416.png" alt="Icon elsewhere instagram" />
+        <span class="label">Instagram</span>
+</a>    </li>
+    <li>
+      <a class="elsewhere-behance" rel="noreferrer" title="twistedfork on Behance" href="/twistedfork/click?type=behance">
+        <img height="20" src="https://cdn.dribbble.com/assets/profile/icon-elsewhere-behance-8014399cb479612cdaf1361b4e941efb889598236a0db7808fa30f7ccffb4a4a.png" alt="Icon elsewhere behance" />
+        <span class="label">Behance</span>
+</a>    </li>
+
+          </ul>
+        </div>
+
+
+          <div class="profile-info-mod">
+            <h3>Featured</h3>
+
+            <ul class="profile-details profile-featured">
+                <li>
+                  <a href="/stories/2011/11/28/timeout">
+                    <img src="https://cdn.dribbble.com/assets/profile/icon-featured-blog-b281aeda49c529afffab940f7d8c0c75af1963ac31827e6db0a588236d2e24c4.png" alt="Icon featured blog" />
+                    Timeout: Dan Matutina
+</a>                </li>
+            </ul>
+          </div>
+    </div>
+</div>
+
+  <div class="floating-sidebar-content">
+    
+  
+
+<ol class="dribbbles group">
+  <li id="screenshot-3668577" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3668577-A-Tribute-to-Malang"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3668577/tribute_1x.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3668577/tribute_teaser.jpg">
+  <img alt="A Tribute to Malang" src="https://cdn.dribbble.com/users/4370/screenshots/3668577/tribute_teaser.jpg" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3668577-A-Tribute-to-Malang">    <strong>A Tribute to Malang</strong>
+      <span class="comment">A portion of a tribute illustration for an artist who passed away.</span>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3668577-A-Tribute-to-Malang/fans">115</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      4
+    </span>
+  </li>
+  <li class="views">
+    <span>1,966</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3668577-A-Tribute-to-Malang/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3668575" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3668575-A-portion-of-a-map"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3668575/tirol_1x.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3668575/tirol_teaser.jpg">
+  <img alt="A portion of a map..." src="https://cdn.dribbble.com/users/4370/screenshots/3668575/tirol_teaser.jpg" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3668575-A-portion-of-a-map">    <strong>A portion of a map...</strong>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3668575-A-portion-of-a-map/fans">63</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      0
+    </span>
+  </li>
+  <li class="views">
+    <span>1,190</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3668575-A-portion-of-a-map/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3632597" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3632597-The-Cloud"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3632597/cloud-gui_1x.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3632597/cloud-gui_teaser.jpg">
+  <img alt="The Cloud" src="https://cdn.dribbble.com/users/4370/screenshots/3632597/cloud-gui_teaser.jpg" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3632597-The-Cloud">    <strong>The Cloud</strong>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3632597-The-Cloud/fans">122</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      0
+    </span>
+  </li>
+  <li class="views">
+    <span>1,784</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3632597-The-Cloud/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3613002" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3613002-Hackathon"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3613002/hackathon_1x.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3613002/hackathon_teaser.jpg">
+  <img alt="Hackathon" src="https://cdn.dribbble.com/users/4370/screenshots/3613002/hackathon_teaser.jpg" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3613002-Hackathon">    <strong>Hackathon</strong>
+      <span class="comment">Playing with Objects</span>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3613002-Hackathon/fans">203</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      1
+    </span>
+  </li>
+  <li class="views">
+    <span>2,672</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3613002-Hackathon/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3613000" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3613000-Doodle-for-Independence-Day"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3613000/indie_1x.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3613000/indie_teaser.jpg">
+  <img alt="Doodle for Independence Day" src="https://cdn.dribbble.com/users/4370/screenshots/3613000/indie_teaser.jpg" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3613000-Doodle-for-Independence-Day">    <strong>Doodle for Independence Day</strong>
+      <span class="comment">Made this Google Doodle for the Philippine Independence Day last June 12. :)</span>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3613000-Doodle-for-Independence-Day/fans">191</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      5
+    </span>
+  </li>
+  <li class="views">
+    <span>2,587</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3613000-Doodle-for-Independence-Day/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/twistedfork">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3527848" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3527848-Connect"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3527848/connect_1x.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3527848/connect_teaser.jpg">
+  <img alt="Connect" src="https://cdn.dribbble.com/users/4370/screenshots/3527848/connect_teaser.jpg" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3527848-Connect">    <strong>Connect</strong>
+      <span class="comment">Something I worked on early this year. :) The full video is now out. I worked with Everett &amp; the Stripe team and Salih with this one.
+
+https://...</span>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3527848-Connect/fans">85</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      1
+    </span>
+  </li>
+  <li class="views">
+    <span>1,901</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3527848-Connect/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/twistedfork">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3475722" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3475722-Intestines"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3475722/digestive_1x.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3475722/digestive_teaser.jpg">
+  <img alt="Intestines" src="https://cdn.dribbble.com/users/4370/screenshots/3475722/digestive_teaser.jpg" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3475722-Intestines">    <strong>Intestines</strong>
+      <span class="comment">Lactobacilli!</span>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3475722-Intestines/fans">67</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      3
+    </span>
+  </li>
+  <li class="views">
+    <span>1,372</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3475722-Intestines/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/twistedfork">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3429184" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3429184-North-Face-Mountain-Festival-2017"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3429184/noface_1x.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3429184/noface_teaser.jpg">
+  <img alt="North Face Mountain Festival 2017" src="https://cdn.dribbble.com/users/4370/screenshots/3429184/noface_teaser.jpg" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3429184-North-Face-Mountain-Festival-2017">    <strong>North Face Mountain Festival 2017</strong>
+      <span class="comment">Made the key visual for this year's North Face Mountain Festival. :) Yey! For more info about the event drop by: https://www.thenorthface.co.uk/inn...</span>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3429184-North-Face-Mountain-Festival-2017/fans">90</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      2
+    </span>
+  </li>
+  <li class="views">
+    <span>1,651</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3429184-North-Face-Mountain-Festival-2017/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/shots/3356083-A-part-of-a-scenery">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3363019" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3363019-X-ercise"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3363019/exercise_1x.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3363019/exercise_teaser.jpg">
+  <img alt="X-ercise" src="https://cdn.dribbble.com/users/4370/screenshots/3363019/exercise_teaser.jpg" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3363019-X-ercise">    <strong>X-ercise</strong>
+      <span class="comment">A part of an exercise illustration set.</span>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3363019-X-ercise/fans">111</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      1
+    </span>
+  </li>
+  <li class="views">
+    <span>2,171</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3363019-X-ercise/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/twistedfork">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3356085" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3356085-Globe"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3356085/globe_1x.jpg" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3356085/globe_teaser.jpg">
+  <img alt="Globe" src="https://cdn.dribbble.com/users/4370/screenshots/3356085/globe_teaser.jpg" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3356085-Globe">    <strong>Globe</strong>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3356085-Globe/fans">103</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      0
+    </span>
+  </li>
+  <li class="views">
+    <span>2,156</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3356085-Globe/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/search">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3356083" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3356083-A-part-of-a-scenery"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3356083/screen_shot_2017-03-12_at_7.43.54_pm.png" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3356083/screen_shot_2017-03-12_at_7.43.54_pm_teaser.png">
+  <img alt="A part of a scenery" src="https://cdn.dribbble.com/users/4370/screenshots/3356083/screen_shot_2017-03-12_at_7.43.54_pm_teaser.png" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3356083-A-part-of-a-scenery">    <strong>A part of a scenery</strong>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3356083-A-part-of-a-scenery/fans">98</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      4
+    </span>
+  </li>
+  <li class="views">
+    <span>2,214</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3356083-A-part-of-a-scenery/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          1
+        </span>
+</a>      <a href="/twistedfork">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+<li id="screenshot-3340501" class="group ">
+  <div class="dribbble">
+    <div class="dribbble-shot">
+      <div class="dribbble-img">
+  <a class="dribbble-link" href="/shots/3340501-Ninja"><picture>
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3340501/screen_shot_2017-03-06_at_1.50.49_pm_1x.png" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/4370/screenshots/3340501/screen_shot_2017-03-06_at_1.50.49_pm_teaser.png">
+  <img alt="Ninja!" src="https://cdn.dribbble.com/users/4370/screenshots/3340501/screen_shot_2017-03-06_at_1.50.49_pm_teaser.png" />
+</picture>
+</a>
+  <a class="dribbble-over" href="/shots/3340501-Ninja">    <strong>Ninja!</strong>
+    <em class="timestamp"></em>
+</a></div>
+
+      <ul class="tools group">
+  <li class="fav">
+    <a title="View fans of this shot" href="/shots/3340501-Ninja/fans">161</a>
+  </li>
+  <li class="cmnt">
+    <span>
+      4
+    </span>
+  </li>
+  <li class="views">
+    <span>2,366</span>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="extras">
+      <a href="/shots/3340501-Ninja/rebounds">
+        <span rel="tipsy" title="This shot has rebounds." class="rebound-mark has-rebounds">
+          0
+        </span>
+</a>      <a href="/twistedfork">
+        <span rel="tipsy" title="This shot is a rebound (reply) of another shot. View the original." class="rebound-mark is-rebound">
+          <img width="16" height="16" alt="Rebound" src="https://cdn.dribbble.com/assets/icon-rebound-2x-24fe8b574874f064bcab2a8e46e0694cc39641ebef3d176c2eb742f5f0c7c308.png" />
+        </span>
+</a>      <span rel="tipsy" title="This shot has attachments" class="attachments-mark">
+        <img width="16" height="16" alt="Attachments" src="https://cdn.dribbble.com/assets/icon-attach-16-2x-e9c3932a8f6aea66c54a2971b83349a8b6fac457fcaff1117cb13f74fe6766b4.png" />
+      </span>
+    </div>
+
+  </div>
+
+  <h2 class="attribution hover-card-parent">
+    <span class="attribution-user">
+      <a class="url hoverable" rel="contact" href="/twistedfork"><img class="photo" src="https://cdn.dribbble.com/users/4370/avatars/mini/DMat.jpg?1390460323" /> Dan Matutina</a>
+      <a class="badge-link" href="/pro">
+  <span class="badge badge-pro">Pro</span>
+
+</a>
+    </span>
+  </h2>
+</li>
+
+<script>
+var newestShots = [{
+    id: 3668577,
+    title: "A Tribute to Malang",
+    path: "/shots/3668577-A-Tribute-to-Malang",
+    published_at: 'July 19, 2017',
+    is_rebound: false,
+    rebounds_count: 0,
+    attachments_count: 0,
+    view_count: 1968,
+    comments_count: 4,
+    likes_count: 115,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3668575,
+    title: "A portion of a map...",
+    path: "/shots/3668575-A-portion-of-a-map",
+    published_at: 'July 19, 2017',
+    is_rebound: false,
+    rebounds_count: 0,
+    attachments_count: 0,
+    view_count: 1193,
+    comments_count: 0,
+    likes_count: 63,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3632597,
+    title: "The Cloud",
+    path: "/shots/3632597-The-Cloud",
+    published_at: 'July 05, 2017',
+    is_rebound: false,
+    rebounds_count: 0,
+    attachments_count: 0,
+    view_count: 1784,
+    comments_count: 0,
+    likes_count: 122,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3613002,
+    title: "Hackathon",
+    path: "/shots/3613002-Hackathon",
+    published_at: 'June 28, 2017',
+    is_rebound: false,
+    rebounds_count: 0,
+    attachments_count: 0,
+    view_count: 2672,
+    comments_count: 1,
+    likes_count: 203,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3613000,
+    title: "Doodle for Independence Day",
+    path: "/shots/3613000-Doodle-for-Independence-Day",
+    published_at: 'June 28, 2017',
+    is_rebound: false,
+    rebounds_count: 0,
+    attachments_count: 0,
+    view_count: 2587,
+    comments_count: 5,
+    likes_count: 191,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3527848,
+    title: "Connect",
+    path: "/shots/3527848-Connect",
+    published_at: 'May 27, 2017',
+    is_rebound: false,
+    rebounds_count: 0,
+    attachments_count: 0,
+    view_count: 1901,
+    comments_count: 1,
+    likes_count: 85,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3475722,
+    title: "Intestines",
+    path: "/shots/3475722-Intestines",
+    published_at: 'May 04, 2017',
+    is_rebound: false,
+    rebounds_count: 0,
+    attachments_count: 0,
+    view_count: 1372,
+    comments_count: 3,
+    likes_count: 67,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3429184,
+    title: "North Face Mountain Festival 2017",
+    path: "/shots/3429184-North-Face-Mountain-Festival-2017",
+    published_at: 'April 12, 2017',
+    is_rebound: true,
+    rebounds_count: 0,
+    attachments_count: 1,
+    view_count: 1651,
+    comments_count: 2,
+    likes_count: 90,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3363019,
+    title: "X-ercise",
+    path: "/shots/3363019-X-ercise",
+    published_at: 'March 14, 2017',
+    is_rebound: false,
+    rebounds_count: 0,
+    attachments_count: 0,
+    view_count: 2171,
+    comments_count: 1,
+    likes_count: 111,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3356085,
+    title: "Globe",
+    path: "/shots/3356085-Globe",
+    published_at: 'March 12, 2017',
+    is_rebound: false,
+    rebounds_count: 0,
+    attachments_count: 0,
+    view_count: 2156,
+    comments_count: 0,
+    likes_count: 103,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3356083,
+    title: "A part of a scenery",
+    path: "/shots/3356083-A-part-of-a-scenery",
+    published_at: 'March 12, 2017',
+    is_rebound: false,
+    rebounds_count: 1,
+    attachments_count: 0,
+    view_count: 2214,
+    comments_count: 3,
+    likes_count: 98,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  },{
+    id: 3340501,
+    title: "Ninja!",
+    path: "/shots/3340501-Ninja",
+    published_at: 'March 06, 2017',
+    is_rebound: false,
+    rebounds_count: 0,
+    attachments_count: 0,
+    view_count: 2366,
+    comments_count: 4,
+    likes_count: 161,
+    liked: false,
+    liked_by_html: null,
+    ga: []
+  }];
+
+if (typeof(Dribbble) != "undefined" && typeof(Dribbble.Shots) != "undefined") {
+  Dribbble.Shots.add(newestShots);
+  Dribbble.TeaserStats.init(newestShots);
+
+    Dribbble.Screenshots.cursor = '1488779499.762489';
+}
+else {
+  if (typeof newShots === "undefined") {
+    var newShots = [];
+  }
+  newShots = newShots.concat(newestShots);
+}
+
+</script>
+
+
+</ol>
+
+  <div class="page">
+  <div class="pagination"><span class="previous_page disabled">&larr; Prev</span> <a class="next_page" rel="next" href="/twistedfork?page=2">Next &rarr;</a></div>
+</div>
+
+
+<div class="infinite">
+    <a href="#" class="form-btn load-more">Load more…</a>
+</div>
+
+<div class="loading-more">
+  <span class="processing">Loading more…</span>
+</div>
+
+<div class="back-to-top" style="display: none">
+  <a href="#"><img title="Back to Top" src="https://cdn.dribbble.com/assets/icon-backtotop-1b04df73090f6b0f3192a3b71874ca3b3cc19dff16adc6cf365cd0c75897f6c0.png" alt="Icon backtotop" /></a>
+</div>
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div id="footer" role="contentinfo">
+  <div id="footer-inner">
+    <div class="group">
+      <div class="footer-mod">
+        <p class="logo"><a href="/"><img width="80" alt="dribbble" src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png" /></a><br />Show and tell for designers</p>
+
+        <p class="about">What are you working on? Dribbble is a community of designers sharing screenshots of their work, process, and projects.</p>
+      </div>
+      <div class="footer-mod">
+        <ul class="extra-links">
+          <li><a id="f-home" href="/about">About</a></li>
+          <li><a href="http://help.dribbble.com">Help</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/terms">Terms</a></li>
+          <li><a href="/guidelines">Guidelines</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="http://shop.dribbble.com/">Shop</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/branding">Brand</a></li>
+          <li><a href="/advertise">Advertise</a></li>
+          <li><a href="http://developer.dribbble.com">API</a></li>
+          <li><a href="/integrations">Integrations</a></li>
+        </ul>
+      </div>
+
+        <div class="footer-mod">
+          <h3>
+            <a href="/jobs">
+              Jobs <span class="meta">for Designers</span>
+</a>          </h3>
+          <ol class="jobs-list">
+  
+<li class="group">
+  <a class="item-team" rel="tipsy" title="Visit the team’s profile" href="/chewy">
+  <img src="https://cdn.dribbble.com/users/959882/avatars/normal/c4f87eae2728571aa5682d7946688f00.png?1468335685" alt="C4f87eae2728571aa5682d7946688f00" />
+</a>
+
+  <a class="job-edit" rel="tipsy" title="Edit this job" data-creator-id="959882" href="/account/jobs/11698/edit">
+    <img src="https://cdn.dribbble.com/assets/icon-edit-button-8d0f2493aa649d9e18d5cf27ee32c93aaa6488ddda85b481f6ca341b85fde845.png" alt="Icon edit button" />
+</a>
+  <a class="item-link group" data-url="http://grnh.se/2duwcp1" href="/jobs/11698?source=footer">
+    <span class="item-info">
+      <span class="item-title">Chewy</span>
+      <span class="item-desc">Email Designer</span>
+    </span>
+
+    <span class="item-meta">Greater Fort Lauderdale, FL</span>
+
+</a></li>
+
+<li class="group">
+  <a class="item-team" rel="tipsy" title="Visit the team’s profile" href="/Base">
+  <img src="https://cdn.dribbble.com/users/1079876/avatars/normal/2be08e1d911308fb5432e1212c812f11.png?1455066684" alt="2be08e1d911308fb5432e1212c812f11" />
+</a>
+
+  <a class="job-edit" rel="tipsy" title="Edit this job" data-creator-id="1079876" href="/account/jobs/11419/edit">
+    <img src="https://cdn.dribbble.com/assets/icon-edit-button-8d0f2493aa649d9e18d5cf27ee32c93aaa6488ddda85b481f6ca341b85fde845.png" alt="Icon edit button" />
+</a>
+  <a class="item-link group" data-url="https://getbase.com/careers/california/communication-designer/" href="/jobs/11419?source=footer">
+    <span class="item-info">
+      <span class="item-title">Base</span>
+      <span class="item-desc">Communication Designer</span>
+    </span>
+
+    <span class="item-meta">San Francisco</span>
+
+</a></li>
+
+</ol>
+
+        </div>
+
+      <div class="footer-mod last">
+          <div class="ad carbon target notloaded">
+</div>
+
+      </div>
+    </div>
+
+    <h4 id="pixels-total" class="group">
+  <strong>793,239,509,727</strong> pixels dribbbled
+</h4>
+
+
+    <p class="follow">
+      <a href="/dribbble"><img width="24" src="https://cdn.dribbble.com/assets/icon-team-dribbble-8706862cdb0afa7f43f9e0218b073515f0a2bef19780961d324ae4620ebe249b.png" alt="Icon team dribbble" /></a>
+      <a href="http://twitter.com/dribbble"><img width="24" src="https://cdn.dribbble.com/assets/icon-team-twitter-1fa6921d96b16e47f00ad0381ebbab59ba089c22b21f9bce783c9a4a077f40e9.png" alt="Icon team twitter" /></a>
+      <a href="http://facebook.com/dribbble"><img width="24" src="https://cdn.dribbble.com/assets/icon-team-facebook-4d63851997b88eb903858057327d93df9f950a55c5104a3a19206f2005682ea3.png" alt="Icon team facebook" /></a>
+      <a href="http://instagram.com/dribbble"><img width="24" src="https://cdn.dribbble.com/assets/icon-team-instagram-5dfdcd1478ea4a1c1e109b32adbd3878062aa1eb571da63ac379e0da1d2d5762.png" alt="Icon team instagram" /></a>
+      <a href="/stories">
+        <img width="24" src="https://cdn.dribbble.com/assets/icon-team-blog-2705adcb7ee6522051e175d10683208f0fa0ad17daa15fdf3f36aca99c540312.png" alt="Icon team blog" />
+</a>    </p>
+
+    <p class="network">
+      We're <a href="http://tiny.website/?utm_content=footer-network" target="_blank">Tiny</a> along with
+      <a href="https://www.designernews.co/?utm_content=footer-network" target="_blank">Designer News</a>,
+      <a href="https://crew.co/?utm_content=footer-network" target="_blank">Crew</a>,
+      <a href="http://metalab.co/?utm_content=footer-network" target="_blank">MetaLab</a>,
+      <a href="https://www.getflow.com/?utm_content=footer-network" target="_blank">Flow</a>,
+      <a href="https://www.pixelunion.net/?utm_content=footer-network" target="_blank">Pixel Union</a>,
+      <a href="https://weworkremotely.com/?utm_content=footer-network" target="_blank">We Work Remotely</a> and more.
+      &copy; 2017 Dribbble. All rights reserved.
+    </p>
+  </div>
+</div> <!-- /footer -->
+
+  
+
+  <div class="shot-overlay" style="display:none;" tabindex="-1">
+    <a href="#" class="close-overlay" aria-label="close">
+      <img src="https://cdn.dribbble.com/assets/icon-shot-x-light-40c073cd65443c99d4ac129b69bf578c8cf97d69b78990c00c4f8c5873b0d601.png" alt="Icon shot x light" />
+    </a>
+
+    <div class="overlay-content group" style="display: none"></div>
+  </div>
+  <div class="attachment-overlay" style="display:none;" tabindex="-1"></div>
+
+
+<script src="//js.honeybadger.io/v0.2/honeybadger.min.js"></script>
+<script>
+Honeybadger.configure({
+  api_key: '1f1d2734', // Public API key
+  environment: 'production',
+  disabled: false,
+  onerror: false,
+  ssl: true
+});
+
+Honeybadger.setContext({
+  userId: null,
+  serverTime: 1501301217000,
+  clientTime: +new Date(),
+  clientTimeString: (new Date()).toString()
+})
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- jquery failover -->
+<script>
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape('%3Cscript src="https://cdn.dribbble.com/assets/jquery-1.8.3.min-558de951bfc970b180d330ead5cef872e30b97b38afe65d7af04dadeeec534f8.js">%3C/script>'))
+  }
+</script>
+
+
+<script src="https://cdn.dribbble.com/assets/global-63349486f4599213dc3e184c614647e4ee93c32a10a4e58fed647ff01306fe93.js"></script>
+<script src="https://cdn.dribbble.com/assets/shots-manifest-0752553d50b3d1edba07f797b4c62e11a63fefb264260d6975da40e4c8b22917.js"></script><script>
+$(function() {
+  Dribbble.Screenshots.initialize({"enable_overlay":true,"cursor":false,"deferredContent":null});
+
+});
+</script>
+<script>
+  $("form.select-sort-form select").on('change', function() {
+    var url = window.location.pathname + '?stream=' + $(this).val();
+    if (Dribbble.Screenshots) {
+      Dribbble.Screenshots.refreshList(url)
+    } else {
+      window.location = url
+    }
+  })
+</script>
+    <script>
+    (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+
+    ga("create", "UA-24041469-1", "auto");
+  </script>
+
+  <script>
+    if (window.location.pathname == "/") {
+      Dribbble.Analytics.namedRoot = "/shots";
+      Dribbble.Analytics.logDribbbleGAPageView("/")
+    } else {
+      Dribbble.Analytics.logDribbbleGAPageView("/twistedfork")
+    }
+
+
+  </script>
+
+
+  <script>
+  Dribbble.Ads.enable();
+  Dribbble.Ads.load("footer");
+</script>
+
+
+
+</body>
+</html>

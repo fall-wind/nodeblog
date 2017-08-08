@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="fixed-menu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<%= description %>">
+    <meta name="keywords" content="<%= keywords %>">
+    <meta name="author" content="<%= author %>">
+    <title><%= title %></title>
+
+    <!-- FONTS -->
+    <link href='http://fonts.css.network/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.css.network/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/owl-carousel/1.32/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/owl-carousel/1.32/owl.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/flexslider/2.6.3/flexslider.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/768.css">
+</head>
+
+<body>
+
+<!--menu-wrapper-->
+<div class="menu-wrapper">
+    <div class="container">
+        <a class="menu-toggle" href="#menu"><i class="fa fa-bars"></i></a>
+        <a class="search-toggle"><i class="fa fa-search"></i></a>
+
+        <!-- menu -->
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/javascript">JavaScript</a>
+                    <ul>
+                        <li><a href="/front-end">Front-End</a></li>
+                        <li><a href="/back-end">Back-End</a></li>
+                        <li><a href="/nodejs">Node.JS</a></li>
+                        <li><a href="/fibjs">FibJS</a></li>
+                        <li><a href="/bootStrap">BootStrap</a></li>
+                        <li><a href="/reactjs">React.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="/photography">Photography</a></li>
+                <li><a href="/tags">Tags</a>
+                    <ul>
+                        <li><a href="/">tag1</a></li>
+                        <li><a href="/">tag1</a></li>
+                        <li><a href="/">Gallery Post</a></li>
+                        <li><a href="/">Video Post</a></li>
+                        <li><a href="/">Audio Post</a></li>
+                        <li><a href="/">Typography</a></li>
+                        <li><a href="/">Archives</a></li>
+                    </ul>
+                </li>
+                <li><a href="/aboutme">About Me</a></li>
+                <li><a href="/archives">Archives</a></li>
+            </ul>
+        </nav>
+        <!-- menu -->
+
+        <!-- top Social -->
+        <div class="top-social">
+            <% include social %>
+        </div>
+        <!-- top Social -->
+
+        <!--search-wrapper-->
+        <div class="search-wrapper">
+            <div class="search-box">
+                <form role="search" method="get" class="search-form" action="#">
+                    <input type="search" id="search-field" placeholder="type and hit enter …" value="" name="s">
+                </form>
+            </div>
+        </div>
+        <!--search-wrapper-->
+
+    </div>
+    <!--container-->
+</div>
+<!--menu-wrapper-->

@@ -1,0 +1,34 @@
+/* =WordPress Core
+-------------------------------------------------------------- */
+.aligncenter, .alignnone, .alignright, .alignleft {
+    display: block; margin: 1.6em auto; clear: both;
+	}
+.wp-caption {
+	color: #aaa;
+	}
+.wp-caption img {
+	border: 0 none; height: auto; margin: 0; padding: 0;
+	}
+.wp-caption p.wp-caption-text {
+    font-size: 14px; margin: 0; padding: .6em .1em 0; text-align: left;
+	}
+/* TABLETS */
+@media screen and (min-width: 768px) {
+	.alignnone {
+		margin: 3em 0; 
+		}
+	.aligncenter {
+		margin: 1em auto; 
+		}
+	.alignright {
+		float:right; margin: .4em 0 1em 2em;
+		}
+	.alignleft {
+		float: left; margin: .4em 2em 1em 0;
+		}
+}
+
+
+
+
+
