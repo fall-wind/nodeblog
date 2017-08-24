@@ -10,15 +10,10 @@ const config = require('../config/default.js');
 router.get('/', async (ctx, next) => {
     //TODO: get some articles from database...
     let res;
-    // let query_result = await userModel.findAllPost();
-    // res = JSON.parse(JSON.stringify(result));
-    // res.forEach((rec) => {
-    //     let tags = await userModel.get_tags(rec['tags']);
-    // });
-    // let tags= await userModel.get_tags(rec['tags']);
     await userModel.findAllPost()
         .then((result) => {
             res = result;
+
             for (let i = 0; i < result.length; i++) {
                 userModel.get_tags(result[i]['tags'])
                     .then((tag_result) => {
