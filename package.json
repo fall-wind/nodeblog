@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "latest",
     "config-lite": "^2.0.0",
     "ejs": "^2.5.6",
     "koa": "^2.3.0",

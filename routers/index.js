@@ -1,6 +1,8 @@
+const async = require('async');
 const router = require('koa-router')();
 const userModel = require('../lib/mysql.js');
 const moment = require('moment');
+
 
 const checkNotLogin = require('../middlewares/check.js').checkNotLogin;
 const checkLogin = require('../middlewares/check.js').checkLogin;
@@ -9,30 +11,31 @@ const config = require('../config/default.js');
 
 router.get('/', async (ctx, next) => {
     //TODO: get some articles from database...
-    let res;
     await userModel.findAllPost()
         .then((result) => {
-            res = result;
+            Promise.all(
+                result.map(item => userModel.get_tags(item['tags'])),
+            ).then(tagList => {
+                for (let i = 0; i < result.length; i++) {
+                    result[i]['tags'] = tagList[i];
+                }
+                return (result);
+            }).then((result) => {
+                ctx.render('index', {
+                    session: ctx.session,
+                    articles: result,
+                    title: config.site_info.index_title,
+                    site_name: config.site_info.site_name,
+                    keywords: config.site_info.keywords,
+                    description: config.site_info.description,
+                    aboutme: config.site_info.aboutme,
+                    author: config.site_info.author,
+                });
+            }).catch((err) => {
+                console.error(err);
+            });
 
-            for (let i = 0; i < result.length; i++) {
-                userModel.get_tags(result[i]['tags'])
-                    .then((tag_result) => {
-                        result[i]['tags'] = tag_result;
-                    });
-            }
         });
-
-    await ctx.render('index', {
-        session: ctx.session,
-        articles: res,
-        title: config.site_info.index_title,
-        site_name: config.site_info.site_name,
-        keywords: config.site_info.keywords,
-        description: config.site_info.description,
-        aboutme: config.site_info.aboutme,
-        author: config.site_info.author,
-    });
-    // ctx.redirect('/posts');
 });
 
 router.get('/posts', async (ctx, next) => {
